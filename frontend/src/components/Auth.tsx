@@ -1,9 +1,9 @@
-import React, { useState, type ChangeEvent } from "react";
+import  { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import {SignupType} from "@sravansurya/common-medium"
 import axios from "axios";
 import { LabelledInput } from "./LabelledInput";
 import { BACKEND_URL } from "../config";
+import type { SignupType } from "@sravansurya/common-medium";
 
 const Auth = ({ type }: { type: "signup" | "signin" }) => {
     const navigate = useNavigate();

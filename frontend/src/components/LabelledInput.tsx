@@ -1,3 +1,5 @@
+import type { ChangeEvent } from "react";
+
 interface LabelledInputType{
     label:string,
     placeholder:string,

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState,type ChangeEvent } from "react";
 import Appbar from "../components/Appbar";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";

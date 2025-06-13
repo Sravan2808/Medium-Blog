@@ -1,4 +1,3 @@
-import React from "react";
 import { useBlog } from "../hooks/useBlog";
 import FullBlog from "../components/FullBlog";
 import { useParams } from "react-router-dom";
@@ -10,7 +9,7 @@ const Blog = () => {
   const { loading, blog } = useBlog({
     id: id || "",
   });
-  if (loading) {
+  if (loading || !blog) {
     return (
       <div>
         <Appbar />
